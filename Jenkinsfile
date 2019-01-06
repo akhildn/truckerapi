@@ -16,7 +16,7 @@ node {
 
 
     stage("mvn build"){
-        sh "clean install"
+        sh "mvn clean install"
     }
 
     stage("docker build"){
