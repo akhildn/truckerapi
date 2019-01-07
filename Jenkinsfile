@@ -39,7 +39,7 @@ node {
                     --publish 8080:8080 \
                     --secret spring.datasource.url \
                     --secret spring.datasource.username \
-                    --secret spring.database.password \
+                    --secret spring.datasource.password \
                     ${DOCKERHUB_REPO}:${DOCKER_IMAGE_VERSION}
                 else
                     docker service update \
