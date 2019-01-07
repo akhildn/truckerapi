@@ -44,7 +44,7 @@ node {
                     ${DOCKERHUB_REPO}:${DOCKER_IMAGE_VERSION}
                 else
                     docker service update \
-                    --image ${DOCKERHUB_REPO}:${DOCKER_IMAGE_VERSION}
+                    --image ${DOCKERHUB_REPO}:${DOCKER_IMAGE_VERSION} \
                     ${DOCKER_SERVICE_ID}
                 fi
                 """
