@@ -40,7 +40,6 @@ node {
                     --secret spring.datasource.url \
                     --secret spring.datasource.username \
                     --secret spring.database.password \
-                    --env spring.profiles.prod \
                     ${DOCKERHUB_REPO}:${DOCKER_IMAGE_VERSION}
                 else
                     docker service update \
