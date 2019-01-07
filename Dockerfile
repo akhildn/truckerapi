@@ -6,7 +6,7 @@ COPY ./docker-entrypoint.sh /docker-entrypoint.sh
 
 RUN chmod 755 /docker-entrypoint.sh
 
-RUN touch /api.rar && mkdir -p /config
+RUN touch /truckerapi.rar && mkdir -p /config
 
 WORKDIR /
 
